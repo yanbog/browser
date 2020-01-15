@@ -1,0 +1,43 @@
+{
+  "name": "browser.js",
+  "version": "1.0.0",
+  "description": "Useragent analysis tool.浏览器分析判断工具 - 用户代理、操作系统信息，原项目地址：https://github.com/mumuy/browser",
+  "keywords": [
+    "useragent",
+    "browser",
+    "firefox",
+    "chrome",
+    "opera",
+    "IE Edge"
+  ],
+  "main": "src/Browser.js",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yanbog/browser.git"
+  },
+  "author": "Haole Zheng",
+  "contributors" : [
+    "mumuy",
+    "onlyling",
+    "Eunknight",
+    "yanbog"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yanbog/browser/issues"
+  },
+  "homepage": "https://github.com/yanbog/browser#readme",
+  "devDependencies": {
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {},
+  "scripts" : {
+  	"build": "webpack",
+  	"dev" : "webpack-dev-server --devtool eval --progress --colors --hot --inline --content-base build",
+  	"dist" : "webpack --progress --profile --colors --config webpack.config.js"
+  }
+}
