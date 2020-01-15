@@ -1,6 +1,22 @@
-# 浏览器信息
+# Browser.js 浏览器信息分析
+> Useragent analysis tool.浏览器分析判断工具 - 用户代理、操作系统信息，原项目地址：https://github.com/mumuy/browser
 
-## 浏览器：
+## 实例效果如下图，或参考`example`下的实例文件`index.html`
+![20200115155208001.png](20200115155208001.png)
+
+## 开始使用：
+```
+<script src="{path}/browser/browser/dist/browser.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+    var info = new Browser();
+    console.log(info);
+    // output: 
+    { device: "PC", language: "zh_CN", engine: "Gecko", browser: "Firefox", os: "Windows", osVersion: "7", version: "72.0", osWidth: 1920, osheight: 1080 }
+</script>
+```
+
+## 支持的浏览器：
 
 Chrome - 谷歌浏览器
 
@@ -130,10 +146,13 @@ Chrome OS
 
 WebOS
 
-## 设备类型
+## 设备类型：
 
 PC - 电脑
 
 Tablet - 平板或PDA
 
 Mobile - 手机
+
+## 注意事项：
+> 本项目并非作者原创，原作者`mumuy`及项目`mumuy/browser`请参考[mumuy/browser](https://github.com/mumuy/browser "browser.js")。我只是在原作者项目的基础上进行了功能的增加、使用`webpack`对项目进行归档、打包发布，版权归原作者所有；开发环境请使用`src/Browser.js`，生产环境请使用`dist/browser.min.js`。
