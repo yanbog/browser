@@ -2,7 +2,7 @@
 > Useragent analysis tool.浏览器分析判断工具 - 用户代理、操作系统信息，原项目地址：https://github.com/mumuy/browser
 
 ## 实例效果如下图，或参考`example`下的实例文件`index.html`
-![20200115155208001.png](20200115155208001.png)
+![20200519164607.png](20200519164607.png)
 
 ## 开始使用：
 ```
@@ -18,7 +18,7 @@
 
 ## 支持的浏览器：
 
-Chrome - 谷歌浏览器
+hrome - 谷歌浏览器
 
 Chromium - 谷歌浏览器开源版
 
@@ -78,6 +78,8 @@ LBBROWSER - 猎豹浏览器
 
 2345Explorer - 2345浏览器
 
+115Browser - 115浏览器
+
 TheWorld - 世界之窗浏览器
 
 Qiyu - 旗鱼浏览器
@@ -102,7 +104,7 @@ Suning - 苏宁易购手机客户端
 
 iQiYi - 爱奇艺手机客户端
 
-DingTakl - 钉钉手机客户端
+DingTalk - 钉钉手机客户端
 
 ## 内核：
 
@@ -146,7 +148,7 @@ Chrome OS
 
 WebOS
 
-## 设备类型：
+## 设备类型
 
 PC - 电脑
 
@@ -154,5 +156,6 @@ Tablet - 平板或PDA
 
 Mobile - 手机
 
+
 ## 注意事项：
-> 本项目并非作者原创，原作者`mumuy`及项目`mumuy/browser`请参考[mumuy/browser](https://github.com/mumuy/browser "browser.js")。我只是在原作者项目的基础上进行了功能的增加、使用`webpack`对项目进行归档、打包发布，版权归原作者所有；开发环境请使用`src/Browser.js`，生产环境请使用`dist/browser.min.js`。
+> 本项目并非作者原创，原作者`mumuy`及项目`mumuy/browser`请参考[mumuy/browser](https://github.com/mumuy/browser "browser.js")。我只是在原作者项目的基础上进行了功能的增加、使用`webpack`对项目进行归档、打包发布，版权归原作者所有；开发环境请使用`src/browser.js`，生产环境请使用`dist/browser.min.js`。
