@@ -1,6 +1,6 @@
   const path = require('path');
   module.exports = {
-    entry: './src/Browser.js',
+    entry: './src/browser.js',
     output: {
       filename: 'browser.min.js',
       path: path.resolve(__dirname, './dist')

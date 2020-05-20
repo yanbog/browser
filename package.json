@@ -8,9 +8,11 @@
     "firefox",
     "chrome",
     "opera",
-    "IE Edge"
+    "IE Edge",
+    "Microsoft Edge",
+    "Internet Explorer"
   ],
-  "main": "src/Browser.js",
+  "main": "src/browser.js",
   "directories": {
     "example": "example"
   },

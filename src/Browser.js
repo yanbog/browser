@@ -218,7 +218,20 @@
             if (_this.osVersion == u) {
                 _this.osVersion = '';
             }
-        }
+        };
+        
+        //系统分辨率信息
+        var osScreen = {
+            "osWidth": function () {
+                var width = window.screen.width;
+                return width;
+            },
+            "osHeight": function () {
+                var height = window.screen.height;
+                return height;
+            }
+        };
+
         //浏览器版本信息
         var version = {
             'Safari': function () {

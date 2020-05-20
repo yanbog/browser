@@ -12,7 +12,7 @@
     var info = new Browser();
     console.log(info);
     // output: 
-    { device: "PC", language: "zh_CN", engine: "Gecko", browser: "Firefox", os: "Windows", osVersion: "7", version: "72.0", osWidth: 1920, osheight: 1080 }
+    { device: "PC", language: "zh_CN", engine: "Gecko", browser: "Firefox", os: "Windows", osVersion: "7", version: "76.0", osWidth: 1920, osheight: 1080 }
 </script>
 ```
 
