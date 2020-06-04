@@ -34,12 +34,12 @@
         var _this = this;
 
         var match = {
-            //内核
+            // 内核
             'Trident': u.indexOf('Trident') > -1 || u.indexOf('NET CLR') > -1,
             'Presto': u.indexOf('Presto') > -1,
             'WebKit': u.indexOf('AppleWebKit') > -1,
             'Gecko': u.indexOf('Gecko/') > -1,
-            //浏览器
+            // 浏览器
             'Safari': u.indexOf('Safari') > -1,
             'Chrome': u.indexOf('Chrome') > -1 || u.indexOf('CriOS') > -1,
             'IE': u.indexOf('MSIE') > -1 || u.indexOf('Trident') > -1,
@@ -85,7 +85,7 @@
             'iQiYi': u.indexOf('IqiyiApp') > -1,
             'DingTalk': u.indexOf('DingTalk') > -1,
             'Huawei': u.indexOf('HuaweiBrowser') > -1||u.indexOf('HUAWEI') > -1,
-            //系统或平台
+            // 系统或平台
             'Windows': u.indexOf('Windows') > -1,
             'Linux': u.indexOf('Linux') > -1 || u.indexOf('X11') > -1,
             'Mac OS': u.indexOf('Macintosh') > -1,
@@ -100,7 +100,7 @@
             'iOS': u.indexOf('like Mac OS X') > -1,
             'Chrome OS': u.indexOf('CrOS') > -1,
             'WebOS': u.indexOf('hpwOS') > -1,
-            //设备
+            // 设备
             'Mobile': u.indexOf('Mobi') > -1 || u.indexOf('iPh') > -1 || u.indexOf('480') > -1,
             'Tablet': u.indexOf('Tablet') > -1 || u.indexOf('Pad') > -1 || u.indexOf('Nexus 7') > -1
         };
@@ -120,7 +120,7 @@
                 }
             }
         }
-        //修正
+        // 修正
         if (match['Mobile']) {
             match['Mobile'] = !(u.indexOf('iPad') > -1);
         } else if (is360) {
@@ -152,7 +152,7 @@
         }else if(match['iOS']){
             match['Safari'] = true;
         }
-        //基本信息
+        // 基本信息
         var hash = {
             engine: ['WebKit', 'Trident', 'Gecko', 'Presto'],
             browser: ['Safari', 'Chrome', 'Edge', 'IE', 'Firefox', 'Firefox Focus', 'Chromium', 'Opera', 'Vivaldi', 'Yandex', 'Arora', 'Lunascape', 'QupZilla', 'Coc Coc', 'Kindle', 'Iceweasel', 'Konqueror', 'Iceape', 'SeaMonkey', 'Epiphany', 'XiaoMi', 'Huawei', '360', '360SE', '360EE', 'UC', 'QQBrowser', 'QQ', 'Baidu', 'Maxthon', 'Sogou', 'LBBROWSER', '2345Explorer', '115Browser', 'TheWorld', 'Quark', 'Qiyu', 'Wechat', 'Taobao', 'Alipay', 'Weibo', 'Douban','Suning', 'iQiYi', 'DingTalk'],
@@ -176,7 +176,7 @@
                 }
             }
         }
-        //系统版本信息
+        // 系统版本信息
         var osVersion = {
             'Windows': function () {
                 var v = u.replace(/^Mozilla\/\d.0 \(Windows NT ([\d.]+);.*$/, '$1');
@@ -220,7 +220,7 @@
             }
         };
         
-        //系统分辨率信息
+        // 系统分辨率信息
         var osScreen = {
             "osWidth": function () {
                 var width = window.screen.width;
@@ -232,7 +232,7 @@
             }
         };
 
-        //浏览器版本信息
+        // 浏览器版本信息
         var version = {
             'Safari': function () {
                 return u.replace(/^.*Version\/([\d.]+).*$/, '$1');
