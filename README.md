@@ -6,7 +6,7 @@
 
 ## 开始使用：
 ```
-<script src="{path}/browser/browser/dist/browser.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="{path}/browser/dist/browser.min.js" type="text/javascript" charset="utf-8"></script>
 
 <script type="text/javascript">
     var info = new Browser();
