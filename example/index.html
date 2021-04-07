@@ -3,7 +3,9 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
-		<title>Browser.js 浏览器测试</title>
+		<title>Browser User-Agent Analysis Tool Browser.js</title>
+		<link rel="bookmark" href="../favicon.ico">
+        <link rel="shortcut icon" type="image/ico" href="../favicon.ico" sizes="16x16">
 		<script src="../src/browser.js"></script>
 		<style>
 			a{
@@ -50,19 +52,19 @@
 			<div class="container">
 				<div class="module">
 					<script>
-						var info = new Browser();
+						let info = new Browser();
 						if(info.device!='Mobile'){
 							document.writeln('<table>\
 								<caption><p>'+navigator.userAgent+'</p></caption>\
 								<thead>\
 									<tr>\
-										<th>浏览器</th>\
-										<th>版本</th>\
-										<th>内核</th>\
-										<th>操作系统</th>\
-										<th>设备</th>\
-										<th>语言</th>\
-										<th>分辨率</th>\
+										<th>浏览器</br>Browser</th>\
+										<th>版本</br>Version</th>\
+										<th>内核</br>Engine</th>\
+										<th>操作系统</br>OS Version</th>\
+										<th>设备</br>Device</th>\
+										<th>语言</br>Language</th>\
+										<th>分辨率</br>Resolution</th>\
 									</tr>\
 								</thead>\
 								<tbody>\
