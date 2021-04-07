@@ -1,12 +1,16 @@
 # Browser.js Browser User-Agent Analysis Tool
+
 > Browser User-Agent Analysis Tool.浏览器分析判断工具 - 用户代理、操作系统信息，原项目地址：https://github.com/mumuy/browser
 
-## 实例效果如下图，或参考`example`下的实例文件`index.html`
+## 效果截图：Screenshot
+
+> 实例效果如下图，或参考`example`下的实例文件`index.html`
 
 ![20210407085544.png](20210407085544.png)
 
-## 开始使用：
-```
+## 开始使用：Get Started
+
+```html
 <script src="{path}/browser/dist/browser.min.js" type="text/javascript" charset="utf-8"></script>
 
 <script type="text/javascript">
@@ -17,7 +21,7 @@
 </script>
 ```
 
-## 支持的浏览器：Browser
+## 支持的浏览器：Support Browser
 
 hrome - 谷歌浏览器
 
@@ -162,6 +166,6 @@ Tablet - 平板或PDA
 Mobile - 手机
 
 
-## 注意事项：
+## 注意事项：LICENSE
 
 > 本项目并非作者原创，原作者`mumuy`及项目`mumuy/browser`请参考[mumuy/browser](https://github.com/mumuy/browser "browser.js")。我只是在原作者项目的基础上进行了功能的增加、使用`webpack`对项目进行归档、打包发布，版权归原作者所有；开发环境请使用`src/browser.js`，生产环境请使用`dist/browser.min.js`。
