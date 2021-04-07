@@ -2,7 +2,8 @@
 > Browser User-Agent Analysis Tool.浏览器分析判断工具 - 用户代理、操作系统信息，原项目地址：https://github.com/mumuy/browser
 
 ## 实例效果如下图，或参考`example`下的实例文件`index.html`
-![20200519164607.png](20200519164607.png)
+
+![20210407085544.png](20210407085544.png)
 
 ## 开始使用：
 ```
