@@ -1,4 +1,4 @@
-# Browser.js 浏览器信息分析
+# Browser.js Browser User-Agent Analysis Tool
 > Browser User-Agent Analysis Tool.浏览器分析判断工具 - 用户代理、操作系统信息，原项目地址：https://github.com/mumuy/browser
 
 ## 实例效果如下图，或参考`example`下的实例文件`index.html`
@@ -17,7 +17,7 @@
 </script>
 ```
 
-## 支持的浏览器：
+## 支持的浏览器：Browser
 
 hrome - 谷歌浏览器
 
@@ -109,7 +109,7 @@ DingTalk - 钉钉手机客户端
 
 Vivo - Vivo浏览器
 
-## 内核：
+## 内核：Engine
 
 EdgeHTML
 
@@ -123,7 +123,7 @@ Gecko
 
 KHTML
 
-## 系统或平台
+## 系统或平台：OS
 
 Windows
 
@@ -153,7 +153,7 @@ Chrome OS
 
 WebOS
 
-## 设备类型
+## 设备类型：Device
 
 PC - 电脑
 
