@@ -23,7 +23,7 @@
 
 ## 支持的浏览器：Support Browser
 
-hrome - 谷歌浏览器
+Chrome - 谷歌浏览器
 
 Chromium - 谷歌浏览器开源版
 
