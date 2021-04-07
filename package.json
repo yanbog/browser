@@ -1,7 +1,7 @@
 {
   "name": "browser.js",
-  "version": "1.0.0",
-  "description": "Useragent analysis tool.浏览器分析判断工具 - 用户代理、操作系统信息，原项目地址：https://github.com/mumuy/browser",
+  "version": "1.0.1",
+  "description": "Browser User-Agent Analysis Tool. 浏览器分析判断工具 - 用户代理、操作系统信息，原项目地址：https://github.com/mumuy/browser",
   "keywords": [
     "useragent",
     "browser",
