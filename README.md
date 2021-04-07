@@ -107,6 +107,8 @@ iQiYi - 爱奇艺手机客户端
 
 DingTalk - 钉钉手机客户端
 
+Vivo - Vivo浏览器
+
 ## 内核：
 
 EdgeHTML
