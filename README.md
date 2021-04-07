@@ -1,5 +1,5 @@
 # Browser.js 浏览器信息分析
-> Useragent analysis tool.浏览器分析判断工具 - 用户代理、操作系统信息，原项目地址：https://github.com/mumuy/browser
+> Browser User-Agent Analysis Tool.浏览器分析判断工具 - 用户代理、操作系统信息，原项目地址：https://github.com/mumuy/browser
 
 ## 实例效果如下图，或参考`example`下的实例文件`index.html`
 ![20200519164607.png](20200519164607.png)
@@ -9,10 +9,10 @@
 <script src="{path}/browser/dist/browser.min.js" type="text/javascript" charset="utf-8"></script>
 
 <script type="text/javascript">
-    var info = new Browser();
+    let info = new Browser();
     console.log(info);
     // output: 
-    { device: "PC", language: "zh_CN", engine: "Gecko", browser: "Firefox", os: "Windows", osVersion: "7", version: "76.0", osWidth: 1920, osheight: 1080 }
+    { device: "PC", language: "zh_CN", engine: "Gecko", browser: "Firefox", os: "Windows", osVersion: "7", version: "76.0", osWidth: 1920, osWeight: 1080 }
 </script>
 ```
 
