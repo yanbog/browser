@@ -75,7 +75,7 @@ Maxthon - 傲游浏览器
 
 Sogou - 搜狗浏览器
 
-LBBROWSER - 猎豹浏览器
+Liebao - 猎豹浏览器
 
 2345Explorer - 2345浏览器
 
@@ -163,4 +163,5 @@ Mobile - 手机
 
 
 ## 注意事项：
+
 > 本项目并非作者原创，原作者`mumuy`及项目`mumuy/browser`请参考[mumuy/browser](https://github.com/mumuy/browser "browser.js")。我只是在原作者项目的基础上进行了功能的增加、使用`webpack`对项目进行归档、打包发布，版权归原作者所有；开发环境请使用`src/browser.js`，生产环境请使用`dist/browser.min.js`。

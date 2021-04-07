@@ -122,7 +122,7 @@
                 }
             }
         }
-        // 修正
+        // 修正 Changed
         if (match['Mobile']) {
             match['Mobile'] = !(u.indexOf('iPad') > -1);
         } else if (is360) {
@@ -154,10 +154,10 @@
         }else if(match['iOS']){
             match['Safari'] = true;
         }
-        // 基本信息
+        // 基本信息 Basic Information
         var hash = {
-            engine: ['WebKit', 'Trident', 'Gecko', 'Presto'],
-            browser: ['Safari', 'Chrome', 'Edge', 'IE', 'Firefox', 'Firefox Focus', 'Chromium', 'Opera', 'Vivaldi', 'Yandex', 'Arora', 'Lunascape', 'QupZilla', 'Coc Coc', 'Kindle', 'Iceweasel', 'Konqueror', 'Iceape', 'SeaMonkey', 'Epiphany', 'XiaoMi', 'Huawei', '360', '360SE', '360EE', 'UC', 'QQBrowser', 'QQ', 'Baidu', 'Maxthon', 'Sogou', 'LBBROWSER', '2345Explorer', '115Browser', 'TheWorld', 'Quark', 'Qiyu', 'Wechat', 'Taobao', 'Alipay', 'Weibo', 'Douban','Suning', 'iQiYi', 'DingTalk'],
+            engine: ['WebKit', 'Trident', 'Gecko', 'Presto', 'KHTML'],
+            browser: ['Safari', 'Chrome', 'Edge', 'IE', 'Firefox', 'Firefox Focus', 'Chromium', 'Opera', 'Vivaldi', 'Yandex', 'Arora', 'Lunascape', 'QupZilla', 'Coc Coc', 'Kindle', 'Iceweasel', 'Konqueror', 'Iceape', 'SeaMonkey', 'Epiphany', 'XiaoMi', 'Huawei', '360', '360SE', '360EE', 'UC', 'QQBrowser', 'QQ', 'Baidu', 'Maxthon', 'Sogou', 'LBBROWSER', '2345Explorer', '115Browser', 'TheWorld', 'Quark', 'Qiyu', 'Wechat', 'Taobao', 'Alipay', 'Weibo', 'Douban','Suning', 'iQiYi', 'DingTalk', 'Vivo'],
             os: ['Windows', 'Linux', 'Mac OS', 'Android', 'Ubuntu', 'FreeBSD', 'Debian', 'iOS', 'Windows Phone', 'BlackBerry', 'MeeGo', 'Symbian', 'Chrome OS', 'WebOS'],
             device: ['Mobile', 'Tablet']
         };
@@ -178,7 +178,7 @@
                 }
             }
         }
-        // 系统版本信息
+        // 系统版本信息 OS Basic Information
         var osVersion = {
             'Windows': function () {
                 var v = u.replace(/^Mozilla\/\d.0 \(Windows NT ([\d.]+);.*$/, '$1');
@@ -222,7 +222,7 @@
             }
         };
         
-        // 系统分辨率信息
+        // 系统分辨率信息 OS Resolution Information
         var osScreen = {
             "osWidth": function () {
                 var width = window.screen.width;
@@ -234,7 +234,7 @@
             }
         };
 
-        // 浏览器版本信息
+        // 浏览器版本信息 Browser Version Information
         var version = {
             'Safari': function () {
                 return u.replace(/^.*Version\/([\d.]+).*$/, '$1');
@@ -327,10 +327,14 @@
             'Sogou': function () {
                 return u.replace(/^.*SE ([\d.X]+).*$/, '$1').replace(/^.*SogouMobileBrowser\/([\d.]+).*$/, '$1');
             },
-            'LBBROWSER': function(){
+            'Liebao': function(){
+                var version = ''
+                if(u.indexOf('LieBaoFast')>-1){
+                    version = u.replace(/^.*LieBaoFast\/([\d.]+).*$/, '$1');
+                }
                 var hash = {'57':'6.5','49':'6.0','46':'5.9','42':'5.3','39':'5.2','34':'5.0','29':'4.5','21':'4.0'};
-                var chrome_vision = navigator.userAgent.replace(/^.*Chrome\/([\d]+).*$/, '$1');
-                return hash[chrome_vision]||'';
+                var chrome_version = u.replace(/^.*Chrome\/([\d]+).*$/, '$1');
+                return version||hash[chrome_version]||'';
             },
             '2345Explorer': function () {
                 var hash = {'69':'10.0','55':'9.9'};
@@ -378,6 +382,9 @@
             },
             'Huawei': function () {
                 return u.replace(/^.*Version\/([\d.]+).*$/, '$1').replace(/^.*HuaweiBrowser\/([\d.]+).*$/, '$1');
+            },
+            'Vivo': function(){
+                return u.replace(/^.*VivoBrowser\/([\d.]+).*$/, '$1');
             }
         };
         _this.version = '';
@@ -387,7 +394,12 @@
                 _this.version = '';
             }
         }
-        // 修正
+        // 修正 Changed
+        if(_this.browser == 'Chrome'&&u.match(/\S+Browser/)){
+            _this.browser = u.match(/\S+Browser/)[0];
+            _this.version = u.replace(/^.*Browser\/([\d.]+).*$/, '$1');
+        }
+        
         if (_this.browser == 'Edge') {
             if(_this.version>"75"){
                 _this.engine = 'Blink';
@@ -401,7 +413,7 @@
         } else if (_this.browser == 'Yandex') {
             _this.engine = 'Blink';
         }
-        // 新增
+        // 新增 added OS Resolution
         _this.osWidth = osScreen.osWidth();
         _this.osHeight = osScreen.osHeight();
     };
