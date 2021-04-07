@@ -70,7 +70,7 @@
             'Baidu': u.indexOf('Baidu') > -1 || u.indexOf('BIDUBrowser') > -1|| u.indexOf('baiduboxapp') > -1,
             'Maxthon': u.indexOf('Maxthon') > -1,
             'Sogou': u.indexOf('MetaSr') > -1 || u.indexOf('Sogou') > -1,
-            'LBBROWSER': u.indexOf('LBBROWSER') > -1,
+            'Liebao': u.indexOf('LBBROWSER') > -1|| u.indexOf('LieBaoFast') > -1,
             '2345Explorer': u.indexOf('2345Explorer') > -1||u.indexOf('Mb2345Browser') > -1,
             '115Browser': u.indexOf('115Browser') > -1,
             'TheWorld': u.indexOf('TheWorld') > -1,
